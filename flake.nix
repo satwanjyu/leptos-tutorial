@@ -30,6 +30,8 @@
             }))
             # html, css, json and eslint language servers
             vscode-langservers-extracted
+            # view! macro formatter
+            leptosfmt
           ] ++ pkgs.lib.optionals pkg.stdenv.isDarwin [
             darwin.apple_sdk.frameworks.SystemConfiguration
           ];
